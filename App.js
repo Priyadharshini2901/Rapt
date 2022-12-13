@@ -1,27 +1,24 @@
-import React from 'react'
 import './App.css';
-import Error from './errors'
-import 
-//import logo from './logo.svg';
-//import LoadingButtons from './pages/button'
-// import OutlinedButtons from './pages/button';
-// import ColorButtons from './pages/ice';
-// import {Button} from '@mui/material';
-// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-{/*import { Route, Routes } from 'react-router-dom';
-import Home from './pages/home';
-import About from './pages/about';*/}
+import Radium1 from'./radium';
+import Appz from './Appz';
+import List from './college';
+import BasicButtons from './sample';
+//import {BrowserRouter,Route,Routes} from 'react-router-dom';
+//import Home from './pages/home'; 
+//import List from './list';
 function App() {
   return (
     <div className="App">
-     
-       {/*<Routes>
-           <Route path='/home' element={<Home />} />
-           <Route path='/about'element={<About />} />
-  </Routes>*/}
-  <Error />
-
-    </div>
+      <Radium1 />
+      <List />
+      <BasicButtons />
+      <Appz />
+        <BrowserRouter>
+          <Routes>
+            <Route path='/'element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+          </div>
   );
 }
 
